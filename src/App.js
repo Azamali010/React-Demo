@@ -3,7 +3,10 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement, incrementByAmount } from "./redux/slice/counter"; // Import the actions
 import Card from "./Componets/Card";
+import ButtonCard from "./Componets/ButtonCard"
+
 import "./Componets/Card.css"
+import "./Componets/ButtonCard.css"
 
 function App() {
   // Access the current counter value from the Redux store
@@ -36,6 +39,7 @@ function App() {
       </div>
     </div>
     <Card/>
+    <ButtonCard/>
     </>
   );
 }

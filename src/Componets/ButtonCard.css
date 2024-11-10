@@ -1,0 +1,57 @@
+/* Card.css */
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin: 20px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    color: #666;
+    margin: 8px 0;
+  }
+  
+  .card-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .card-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .card-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-button-delete {
+    background-color: #dc3545;
+  }
+  
+  .card-button-delete:hover {
+    background-color: #c82333;
+  }
+  
