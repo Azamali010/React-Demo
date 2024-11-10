@@ -2,6 +2,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement, incrementByAmount } from "./redux/slice/counter"; // Import the actions
+import Card from "./Componets/Card";
+import "./Componets/Card.css"
 
 function App() {
   // Access the current counter value from the Redux store
@@ -9,6 +11,7 @@ function App() {
   const dispatch = useDispatch(); // To dispatch actions
 
   return (
+    <>
     <div className="App">
       <h1>Counter App</h1>
       <div>
@@ -32,6 +35,8 @@ function App() {
         </button>
       </div>
     </div>
+    <Card/>
+    </>
   );
 }
 
