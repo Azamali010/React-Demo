@@ -4,14 +4,14 @@ import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement, incrementByAmount } from "./redux/slice/counter"; // Import the actions
 import Card from "./Componets/Card";
 import ButtonCard from "./Componets/ButtonCard"
-
+import ApidataCard from "./Componets/apidata";
 import "./Componets/Card.css"
 import "./Componets/ButtonCard.css"
 
 function App() {
   // Access the current counter value from the Redux store
   const count = useSelector((state) => state.counter.value);
-  const dispatch = useDispatch(); // To dispatch actions
+  const dispatch = useDispatch(); // To dispatch action
 
   return (
     <>
@@ -40,6 +40,8 @@ function App() {
     </div>
     <Card/>
     <ButtonCard/>
+    <apidata/>
+    <ApidataCard/>
     </>
   );
 }
